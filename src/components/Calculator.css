@@ -1,0 +1,81 @@
+.App {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    margin-top: 50px;
+  }
+  
+  .calculator {
+    display: inline-block;
+    border: 2px solid #333;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .display {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+  }
+  
+  .display input {
+    width: 100%;
+    height: 40px;
+    text-align: right;
+    font-size: 1.5rem;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 5px;
+  }
+  
+  .result {
+    text-align: right;
+    font-size: 1.2rem;
+    color: green;
+    height: 25px;
+    margin-top: 5px;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 buttons per row */
+    gap: 10px; /* Space between buttons */
+  }
+  
+  .buttons button {
+    width: 100%;
+    height: 50px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buttons button:hover {
+    background-color: #ddd;
+  }
+  
+  .clear {
+    background-color: #ddd;
+  
+  }
+  
+  .clear:hover {
+    background-color: #e53935;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .buttons button {
+      width: 45px;
+      height: 45px;
+    }
+  
+    .display input {
+      font-size: 1.2rem;
+      height: 35px;
+    }
+  }
+  
